@@ -11,6 +11,7 @@ enum LogLevel {
     WARN,
     ERROR,
 }
+
 function stringToLogLevel(level: string): LogLevel {
     if (!level) {
         return LogLevel.WARN;
@@ -18,9 +19,9 @@ function stringToLogLevel(level: string): LogLevel {
     switch (level.toUpperCase()) {
         case 'INFO':
             return LogLevel.INFO;
-        case 'WARNING':
+        case 'WARN':
             return LogLevel.WARN;
-        case 'SEVERE':
+        case 'ERROR':
             return LogLevel.ERROR;
         default:
             return LogLevel.WARN;

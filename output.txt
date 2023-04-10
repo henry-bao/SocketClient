@@ -1,0 +1,22 @@
+## remember to run yarn build first
+
+## yarn start djxmmx.net 17 INFO
+Connecting to server: djxmmx.net on port: 17
+Connected to server
+"Anyone could see the road that they walk on is paved in gold, and It's always summer, they'll never get cold.
+ They'll never get hungry, they'll never get old and gray.
+ You can see their shadows wandering off somewhere, they won't make it home but they really don't care.
+ They wanted the highway, they're happier there today, today..."
+Exiting clienttball (The Way)
+
+## yarn start time.nist.gov 13 INFO 
+Connecting to server: time.nist.gov on port: 13
+Connected to server
+
+60044 23-04-10 23:18:13 50 0 0 691.3 UTC(NIST) * 
+Exiting client
+
+# yarn start tcpbin.com 4242 INFO "Echo test"
+Connecting to server: tcpbin.com on port: 4242
+Connected to server
+Echo test

@@ -56,9 +56,9 @@ socket.on('data', (data: string) => {
 });
 
 socket.on('error', (err: Error) => {
-    logMessage(LogLevel.ERROR, `Error connecting to server: ${err}`);
+    logMessage(LogLevel.ERROR, `\nError connecting to server: ${err}`);
 });
 
 socket.on('close', () => {
-    logMessage(LogLevel.INFO, 'Exiting client');
+    logMessage(LogLevel.INFO, '\nExiting client');
 });

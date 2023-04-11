@@ -53,13 +53,14 @@ const socket: net.Socket = net.createConnection({ host: server, port }, () => {
 socket.setEncoding('utf-8');
 
 socket.on('data', (data: string) => {
-    process.stdout.write(data);
+    console.log(data);
 });
 
 socket.on('error', (err: Error) => {
-    logMessage(LogLevel.ERROR, `\nError connecting to server: ${err}`);
+    logMessage(LogLevel.ERROR, `Error connecting to server: ${err}`);
 });
 
 socket.on('close', () => {
-    logMessage(LogLevel.INFO, '\nExiting client');
+    logMessage(LogLevel.INFO, 'Exiting client');
+    process.exit(0);
 });

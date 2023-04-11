@@ -8,4 +8,8 @@ How to run:
 yarn install # or npm install
 
 yarn start <server> <port> <loggingLevel> <"command1"> <"command2">... # or npm run start ...
+# logging levels:
+# INFO
+# WARN
+# ERROR
 ```
